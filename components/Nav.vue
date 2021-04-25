@@ -30,7 +30,7 @@
           </div>
         </div>
         <nav
-          class="w-full md:block absolute left-0 md:static bg-black md:bg-none z-20"
+          class="w-full sm:hidden md:block absolute left-0 md:static bg-black md:bg-none z-20"
         >
           <ul class="md:flex md:justify-end md:items-end">
             <li class="w-full md:w-auto md:ml-5">
