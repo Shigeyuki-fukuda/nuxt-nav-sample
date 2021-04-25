@@ -37,7 +37,7 @@
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/shop"
-                class="text-white sm:hover:bg-gray-600 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
+                class="text-white sm:hover:bg-gray-600 sm:hover:bg-gray-600 md:block inline-block md:py-0 py-5 px-5 md:px-0 w-full"
                 >店舗情報</nuxt-link
               >
             </li>
