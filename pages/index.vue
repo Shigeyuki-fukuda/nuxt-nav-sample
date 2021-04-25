@@ -1,5 +1,5 @@
 <template>
-  <Nav/>
+  <Nav />
 </template>
 
 <script lang="ts">
@@ -7,11 +7,6 @@ import { defineComponent } from '@nuxtjs/composition-api'
 import Nav from '@/components/Nav.vue'
 
 export default defineComponent({
-  components: { Nav },
-  setup() {
-    return {}
-  },
+  components: { Nav }
 })
 </script>
-
-<style></style>
