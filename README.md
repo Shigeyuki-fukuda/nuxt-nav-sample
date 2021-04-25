@@ -1,5 +1,13 @@
 # nuxt-nav-sample
 
+## 概要
+
+こちらは Zenn の [Nuxt.js(Composition API)で簡単ハンバーガーメニュー実装](https://zenn.dev/fuqda/articles/7ba60d9102907e)という記事のサンプルコード確認用リポジトリです。
+
+## サンプルコード確認用の本番サイト
+
+https://nuxt-nav-sample.netlify.app/
+
 ## Build Setup
 
 ```bash
