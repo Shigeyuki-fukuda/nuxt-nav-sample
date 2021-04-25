@@ -7,6 +7,6 @@ import { defineComponent } from '@nuxtjs/composition-api'
 import Nav from '@/components/Nav.vue'
 
 export default defineComponent({
-  components: { Nav }
+  components: { Nav },
 })
 </script>
