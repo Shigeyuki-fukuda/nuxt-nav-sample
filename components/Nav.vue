@@ -7,7 +7,7 @@
         >
           <h1>
             <nuxt-link
-              class="inline-block py-2 mr-4 text-sm font-bold leading-relaxed text-white whitespace-no-wrap"
+              class="inline-block py-2 mr-4 text-2xl font-bold leading-relaxed text-white whitespace-no-wrap"
               to="/"
             >
               Nuxt Cafe
@@ -37,21 +37,21 @@
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/shop"
-                class="inline-block w-full px-5 py-5 text-white sm:hover:bg-gray-600 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md hover:bg-gray-700 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
                 >店舗情報</nuxt-link
               >
             </li>
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/menu"
-                class="inline-block w-full px-5 py-5 text-white sm:hover:bg-gray-600 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md hover:bg-gray-700 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
                 >メニュー</nuxt-link
               >
             </li>
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/information"
-                class="inline-block w-full px-5 py-5 text-white sm:hover:bg-gray-600 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md hover:bg-gray-700 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
                 >お知らせ</nuxt-link
               >
             </li>
