@@ -36,22 +36,33 @@
           <ul class="md:flex md:justify-end md:items-end">
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
+                to="/"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md md:hover:underline hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                :class="{ underline: isCurrentPage('') }"
+                >ホーム</nuxt-link
+              >
+            </li>
+            <li class="w-full md:w-auto md:ml-5">
+              <nuxt-link
                 to="/shop"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md hover:bg-gray-700 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md md:hover:underline hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                :class="{ underline: isCurrentPage('shop') }"
                 >店舗情報</nuxt-link
               >
             </li>
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/menu"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md hover:bg-gray-700 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md md:hover:underline hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                :class="{ underline: isCurrentPage('menu') }"
                 >メニュー</nuxt-link
               >
             </li>
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/information"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md hover:bg-gray-700 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md md:hover:underline hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                :class="{ underline: isCurrentPage('information') }"
                 >お知らせ</nuxt-link
               >
             </li>
@@ -63,16 +74,26 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from '@nuxtjs/composition-api'
+import { defineComponent, ref, useRoute } from '@nuxtjs/composition-api'
 
 export default defineComponent({
-  name: 'Nav',
+  name: 'Navigation',
   setup() {
+    const route = useRoute()
+
+    const isCurrentPage = (page: string) => {
+      const regExp = new RegExp(`^/${page}$`)
+      return route.value.path.match(regExp)
+    }
+
     const showMenu = ref(false)
+
     const toggleStatus = () => {
       showMenu.value = !showMenu.value
     }
+
     return {
+      isCurrentPage,
       showMenu,
       toggleStatus,
     }
