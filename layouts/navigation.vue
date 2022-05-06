@@ -37,32 +37,32 @@
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md md:hover:underline hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
-                :class="{ underline: isCurrentPage('') }"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                :class="{ current: isCurrentPage('') }"
                 >ホーム</nuxt-link
               >
             </li>
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/shop"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md md:hover:underline hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
-                :class="{ underline: isCurrentPage('shop') }"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                :class="{ current: isCurrentPage('shop') }"
                 >店舗情報</nuxt-link
               >
             </li>
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/menu"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md md:hover:underline hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
-                :class="{ underline: isCurrentPage('menu') }"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                :class="{ current: isCurrentPage('menu') }"
                 >メニュー</nuxt-link
               >
             </li>
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/information"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 rounded-md md:hover:underline hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
-                :class="{ underline: isCurrentPage('information') }"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                :class="{ current: isCurrentPage('information') }"
                 >お知らせ</nuxt-link
               >
             </li>
@@ -100,3 +100,15 @@ export default defineComponent({
   },
 })
 </script>
+
+<style scoped>
+.current {
+  color: white;
+  border-bottom: 2px solid white;
+
+  /* SP */
+  @media (max-width: 767px) {
+    background-color: #374151;
+  }
+}
+</style>
