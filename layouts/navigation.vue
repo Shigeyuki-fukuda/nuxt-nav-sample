@@ -39,6 +39,7 @@
                 to="/"
                 class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
                 :class="{ current: isCurrentPage('') }"
+                :aria-current="isCurrentPage('') ? 'page' : undefined"
                 >ホーム</nuxt-link
               >
             </li>
@@ -47,6 +48,7 @@
                 to="/shop"
                 class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
                 :class="{ current: isCurrentPage('shop') }"
+                :aria-current="isCurrentPage('shop') ? 'page' : undefined"
                 >店舗情報</nuxt-link
               >
             </li>
@@ -55,6 +57,7 @@
                 to="/menu"
                 class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
                 :class="{ current: isCurrentPage('menu') }"
+                :aria-current="isCurrentPage('menu') ? 'page' : undefined"
                 >メニュー</nuxt-link
               >
             </li>
@@ -63,6 +66,9 @@
                 to="/information"
                 class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
                 :class="{ current: isCurrentPage('information') }"
+                :aria-current="
+                  isCurrentPage('information') ? 'page' : undefined
+                "
                 >お知らせ</nuxt-link
               >
             </li>
