@@ -48,7 +48,7 @@
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-4 md:whitespace-nowrap"
                 :class="{ current: isCurrentPage('') }"
                 :aria-current="isCurrentPage('') ? 'page' : undefined"
                 >ホーム</nuxt-link
@@ -57,7 +57,7 @@
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/shop"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-4 md:whitespace-nowrap"
                 :class="{ current: isCurrentPage('shop') }"
                 :aria-current="isCurrentPage('shop') ? 'page' : undefined"
                 >店舗情報</nuxt-link
@@ -66,7 +66,7 @@
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/menu"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-4 md:whitespace-nowrap"
                 :class="{ current: isCurrentPage('menu') }"
                 :aria-current="isCurrentPage('menu') ? 'page' : undefined"
                 >メニュー</nuxt-link
@@ -75,7 +75,7 @@
             <li class="w-full md:w-auto md:ml-5">
               <nuxt-link
                 to="/information"
-                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-0"
+                class="inline-block w-full px-5 py-5 text-xl font-bold leading-loose text-gray-300 hover:text-white sm:hover:bg-gray-700 md:block md:py-0 md:px-4 md:whitespace-nowrap"
                 :class="{ current: isCurrentPage('information') }"
                 :aria-current="
                   isCurrentPage('information') ? 'page' : undefined
